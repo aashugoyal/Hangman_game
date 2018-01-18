@@ -2,6 +2,18 @@ import random
 word= 'blue green yellow black red'.split()
 def chooseWord(word):
     return random.choice(word)
-#hahahhahaahhah its too funny man
-def bhai():
-    print("cool")
+def isWordGuessed(secretWord, letterGuessed):
+    """
+       letterGuessed : the letter which we are guessing
+       if all the letter which we are guessing is in secretWord
+       then our function  return True otherwise False   
+    """
+    for x in range(len(secretWord)):
+        counter=0
+        if secretWord[x] in letterGuessed:
+            counter+=1
+        if counter == len(secretWord):
+            return True
+        else:
+            return False
+            
