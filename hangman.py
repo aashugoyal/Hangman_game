@@ -17,6 +17,9 @@ def isWordGuessed(secretWord, letterGuessed):
         else:
             return False
 def getGuessedWord(secretWord, letterGuessed):
+    '''
+    if letter is correct then it is in the correct position
+    '''
     value=''
     char=''
     for x in secretWord:
