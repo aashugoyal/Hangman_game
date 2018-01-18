@@ -16,4 +16,14 @@ def isWordGuessed(secretWord, letterGuessed):
             return True
         else:
             return False
-            
+def getGuessedWord(secretWord, letterGuessed):
+    value=''
+    char=''
+    for x in secretWord:
+        if x in letterGuessed:
+            value = x
+        else:
+            value='_'
+        char=char+value
+        print(char)
+        
