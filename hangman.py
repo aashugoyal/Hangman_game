@@ -31,6 +31,9 @@ def getGuessedWord(secretWord, letterGuessed):
         char=char+value
         return char
 def getAvailableWord(secretWord, letterGuessed):
+    '''
+    return the available letter which are not guessed by the user
+    '''
     lowerstr=string.ascii_lowercase
     value = ''
     total=''
