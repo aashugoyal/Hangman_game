@@ -29,7 +29,7 @@ def getGuessedWord(secretWord, letterGuessed):
         else:
             value='_'
         char=char+value
-        print(char)
+        return char
 def getAvailableWord(secretWord, letterGuessed):
     lowerstr=string.ascii_lowercase
     value = ''
