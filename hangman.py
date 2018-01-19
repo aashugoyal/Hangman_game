@@ -1,4 +1,5 @@
 import random
+import string
 word= 'blue green yellow black red'.split()
 def chooseWord(word):
     return random.choice(word)
@@ -29,4 +30,14 @@ def getGuessedWord(secretWord, letterGuessed):
             value='_'
         char=char+value
         print(char)
-        
+def getAvailableWord(secretWord, letterGuessed):
+    lowerstr=string.ascii_lowercase
+    value = ''
+    total=''
+    for x in lowerstr:
+        if lowerstr not in letterGuessed:
+            value = 'x'
+        else:
+            value=''
+        total=total +value
+    return total
