@@ -32,5 +32,6 @@ def getGuessedWord(secretWord, letterGuessed):
         return char
     '''
     currently working on it 
-    12345
+    12345678910
+    
     '''
