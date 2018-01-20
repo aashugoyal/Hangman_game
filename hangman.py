@@ -30,10 +30,4 @@ def getGuessedWord(secretWord, letterGuessed):
             value='_'
         char=char+value
         return char
-    '''
-    currently working on it 
-    12345678910
-    '''
     
-    
-
